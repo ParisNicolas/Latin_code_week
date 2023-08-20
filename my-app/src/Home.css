@@ -1,3 +1,14 @@
+.main-container {
+    background-image: url('https://img.freepik.com/foto-gratis/fondo-acuarela-verde_95678-443.jpg'); /* Reemplaza con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
 div {
     font-family: 'Ysabeau Infant', sans-serif;
     
