@@ -10,9 +10,10 @@ function Navbar() {
             <div className="logo">
                 <img src="https://1000marcas.net/wp-content/uploads/2019/12/logo-Renault.png" alt="Logo" />
             </div>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/info">Info</Link></li>
-                <li><Link to="/juego">Juego</Link></li>
+                <li><Link to="/">PRINCIPAL</Link></li>
+                <li><Link to="/info">INFO</Link></li>
+                <li><Link to="/juego">JUEGO</Link></li>
+                <li><Link to="/calculadora">CALCULADORA</Link></li>
             <div className="logo">
                 <img src="https://1000marcas.net/wp-content/uploads/2019/12/logo-Renault.png" alt="Logo" />
             </div>

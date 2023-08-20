@@ -1,0 +1,54 @@
+.main-container {
+    background-image: url('https://img.freepik.com/foto-gratis/fondo-acuarela-verde_95678-443.jpg'); /* Reemplaza con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.calculator {
+
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid #0b5207a9;
+    border-radius: 5px;
+    background-color: #0aec7098;
+}
+
+.calculator h2 {
+    margin-bottom: 10px;
+}
+
+.calculator label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.calculator input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 3px solid #12d708a9;
+}
+
+.calculator button {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.calculator button:hover {
+    background-color: rgb(28, 242, 28);
+}
+
+.calculator p {
+    margin-top: 10px;
+    font-weight: bold;
+}
