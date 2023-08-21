@@ -1,0 +1,36 @@
+/* Estilo del contenedor del iframe */
+#iframeContainer {
+    border: 2px solid #334f6d; /* Color del borde y grosor */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta contenido que se desborda */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    margin: auto;
+    width: 600px;
+    height: 400px;
+  }
+  
+  /* Estilo del iframe */
+  #iframeContainer iframe {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: 100%; /* Altura fija o ajusta según tus necesidades */
+    border: none; /* Elimina el borde del iframe */
+  }
+  
+  /* Estilo del botón de reseteo (opcional) */
+  #resetButton {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Cambia el color del botón al pasar el mouse por encima */
+  #resetButton:hover {
+    background-color: #0056b3;
+  }
+
+  

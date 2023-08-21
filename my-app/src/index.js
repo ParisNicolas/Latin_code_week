@@ -12,16 +12,16 @@ import Calcualdora from './Calculadora';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-  <BrowserRouter>
-  <Routes>
-  <Route path="/" element={<Navbar />} >
-  <Route index element={<Home />} />
-  <Route path="juego" element={<Juego />} />
-  <Route path="info" element={<Info />} />
-  <Route path="calculadora" element={<Calcualdora />} />
-  </Route>
-  </Routes>
-  </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navbar />} >
+          <Route index element={<Home />} />
+          <Route path="juego" element={<Juego />} />
+          <Route path="info" element={<Info />} />
+          <Route path="calculadora" element={<Calcualdora />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
   );
 

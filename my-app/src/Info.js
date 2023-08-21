@@ -15,10 +15,10 @@ function Info() {
       >
         <h2>Barra Lateral</h2>
         <ul>
-          <li>Inicio</li>
-          <li>Acerca de</li>
-          <li>Servicios</li>
-          <li>Contacto</li>
+          <li><a href="/info">Inicio</a></li>
+          <li><a href="/info">Acerca de</a></li>
+          <li><a href="/info">Servicios</a></li>
+          <li><a href="/info">Contacto</a></li>
         </ul>
       </div>
       <button className="toggle-button" onClick={toggleSidebar}>
