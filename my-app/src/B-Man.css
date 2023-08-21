@@ -1,5 +1,5 @@
-.fondo1 {
-    background-color: rgb(215, 176, 108);
+.fondo2 {
+    background-color: #699a6a; 
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -8,8 +8,8 @@
 
 }
 
-.tarjeta1 {
-    background-color: #699a6a; 
+.tarjeta2 { 
+    background-color: rgb(215, 176, 108);
     padding: 20px;
     border-radius: 10px;
     color: rgb(0, 0, 0);
