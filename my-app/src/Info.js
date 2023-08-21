@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import { Link, Outlet } from "react-router-dom";
 import './Barra.css';
+import './Info.css'; 
 
 function Info() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
@@ -9,22 +11,30 @@ function Info() {
   };
 
   return (
-    <div>
+    <>
+    <div className="main-container">
       <div
         className={`barra ${sidebarVisible ? 'active' : ''}`}
       >
-        <h2>Barra Lateral</h2>
+        <h2>¿Que necesitas?</h2>
         <ul>
-          <li><a href="/info">Inicio</a></li>
-          <li><a href="/info">Acerca de</a></li>
-          <li><a href="/info">Servicios</a></li>
-          <li><a href="/info">Contacto</a></li>
+          <li><Link to="/preg">Preguntas frecuentes</Link></li>
+          <li><Link to="/man">Mantenimiento</Link></li>
+          <li><Link to="/ven">Ventajas</Link></li>
+          <li><Link to="/tec">Tecnologias emergentes</Link></li>
         </ul>
       </div>
-      <button className="toggle-button" onClick={toggleSidebar}>
-        &#9776; Mostrar Barra Lateral
+
+
+      <h1> Si tienes alguna duda sobre paneles solares puedes coonsultar nuestro catalogo</h1>
+      <div className="button-container">
+      <button className="button" onClick={toggleSidebar}>
+        &#9776; Mas info
       </button>
+      </div>
     </div>
+    <Outlet></Outlet>
+    </>
   );
 }
 

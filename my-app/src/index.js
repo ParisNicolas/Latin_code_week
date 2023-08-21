@@ -4,6 +4,10 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Juego from './Juego';
 import Info from './Info';
+import Bman from './B-Man';
+import Bpreg from './B-Preg';
+import Btec from './B-Tec';
+import Bven from './B-Ven';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
@@ -16,6 +20,10 @@ root.render(
       <Routes>
         <Route path="/" element={<Navbar />} >
           <Route index element={<Home />} />
+          <Route path="ven" index element={<Bven/>} />
+          <Route path="man" index element={<Bman />} />
+          <Route path="tec" index element={<Btec />} />
+          <Route path="preg" index element={<Bpreg />} />
           <Route path="juego" element={<Juego />} />
           <Route path="info" element={<Info />} />
           <Route path="calculadora" element={<Calcualdora />} />
