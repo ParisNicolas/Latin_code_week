@@ -27,3 +27,15 @@
     width: 190px; /* Ajustar el ancho del botón */
     height: 100px;
   }
+
+  .info-text {
+    background-color: rgb(255, 255, 172); /* Fondo amarillo */
+    border: 2px solid green; /* Borde verde de 2px */
+    border-radius: 20px; /* Esquinas circulares */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 10px; /* Margen superior para separar del botón */
+}
+
+  .size-text {
+    font-size: 12px;
+  }

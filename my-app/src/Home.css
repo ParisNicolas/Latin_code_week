@@ -5,28 +5,58 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
-}
-
-
-div {
     font-family: 'Ysabeau Infant', sans-serif;
-    
     text-align: center;
-  
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alinear elementos verticalmente */
 }
 
-h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espaciado inferior */
 }
 
-h5 {
-    font-size: 1em;
+.sun-image {
+    width: 60px; /* Ajusta el tamaño de las imágenes de sol */
+    height: 60px;
+    margin-right: 10px; /* Espaciado derecho entre las imágenes y el título */
+}
+
+.title-text {
+    font-size: 32px;
+    color: #FFD700; /* Amarillo oscuro */
+}
+
+.subtitle {
+    font-size: 25px;
+    color: #FFD700;
+}
+
+.description {
+    font-size: 20px;
+    color: #000000; /* Negro */
+}
+
+.panel-image {
+    max-width: 900px; /* Ajusta el ancho máximo de la imagen según tus preferencias */
+    border: 2px solid #ADD8E6; /* Borde azul claro de 2px */
+    border-radius: 20px; /* Esquinas redondeadas */
+}
+
+.pan1-image {
+    width: 100px; /* Ajusta el tamaño de las imágenes de sol */
+    height: 100px;
+    margin-right: 10px; /* Espaciado derecho entre las imágenes y el título */
+}
+
+.paneles {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espaciado inferior */
 }
