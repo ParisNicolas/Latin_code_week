@@ -5,8 +5,8 @@ function Bven(){
 
 return(
     <>
-    <div className="fondo">
-    <div className="tarjeta">
+    <div className="fondo1">
+    <div className="tarjeta1">
     <h1>Ventajas de los Paneles solares</h1>
     <ul>
         <h4>Energia renobable y limpia:Los paneles solares utilizan la energía del sol para generar electricidad, lo que significa que es una fuente de energía renovable y limpia. No emiten gases de efecto invernadero ni contaminantes atmosféricos durante su operación, lo que contribuye a la reducción de la huella de carbono.</h4>

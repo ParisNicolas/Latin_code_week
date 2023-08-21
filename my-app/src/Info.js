@@ -26,7 +26,7 @@ function Info() {
       </div>
 
 
-      <h1> Si tienes alguna duda sobre paneles solares puedes coonsultar nuestro catalogo</h1>
+      <h1> Si tenes alguna duda sobre paneles solares puedes coonsultar nuestro catalogo</h1>
       <div className="button-container">
       <button className="button" onClick={toggleSidebar}>
         &#9776; Mas info
