@@ -120,8 +120,8 @@ function game_render() {
   
   //VIDAS
   textSize(15);
-  text('Puntaje: '+ points, 10, 30);
-  text('Vidas: '+ lives, 10, 60);
+  text('Foquitos encendidos: '+ points, 10, 30);
+  text('Vida Util: '+ lives + "0%", 10, 60);
   if(lives <= 0) gameOver = true;
   
   //-----------POWER UP------------------
@@ -205,6 +205,7 @@ function Bullets(){
   if(kb.pressing('space')){
     let bullet = new bullets.Sprite(navy.x, navy.y-25, 10);
     bullet.img = 'bullet2.png';
+    bullet.scale = 0.7;
     bullet.vel.y = -12;
     bullet.life = 50;
   }
@@ -246,6 +247,7 @@ function spawn_lazer_powerUp(){
   if(gameOver == false){
     let lazer = new Sprite(random(0, width), -50, 15);
     //lazer.img = 'powerUp1.png';
+    lazer.img = 'sol_powerup.png';
     lazer.vel.y = 3;
     lazer.life = 500;
 
