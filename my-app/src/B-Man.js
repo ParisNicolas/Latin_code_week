@@ -7,7 +7,7 @@ return(
     <>
     <div className="fondo2">
     <div className="tarjeta2">
-    <h1>Mantenimiento de paneles solares</h1>
+    <h1 style={{ color: 'rgb(123, 19, 21)' }}>Mantenimiento de paneles solares</h1>
     <ul>
         <h4>Se recomienda realizar una limpieza o una inspeccion regular de los paneles, para verificar su correcto funcionamiento y que estos tengan
             un rendimiento optimo.
