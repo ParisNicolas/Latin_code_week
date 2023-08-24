@@ -6,7 +6,7 @@ function Navbar() {
     return (
       <>
         <nav className="navbar">
-            <img src="/itrlogo.png" width="100"/>
+            <a href="/" className="img"><img src="/itrlogo.png" width="140" /></a>
             <ul className="nav-links"> 
             <div className="logo" >
                 <img src="https://1000marcas.net/wp-content/uploads/2019/12/logo-Renault.png" alt="Logo" />

@@ -7,6 +7,11 @@
     padding-left: 40px;
 }
 
+.img{
+    padding: 0px;
+    margin-bottom: -14px;
+}
+
 
 .logo img {
     max-height: 35px; 

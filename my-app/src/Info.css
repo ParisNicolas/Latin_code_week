@@ -4,9 +4,33 @@
     background-position: center;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
+    position: relative;
 }
+
+.title{
+  margin-left: 260px;
+}
+
+.links{
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 260px; /* Set the width of the sidebar */
+  position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #11b447; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+.links li {
+  display: block;
+  margin-left: 0px;
+  margin-right: 40px;
+}
+
+
 
 .button-container {
     display: flex;

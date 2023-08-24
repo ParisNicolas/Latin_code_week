@@ -13,7 +13,8 @@ function Info() {
   return (
     <>
     <div className="main-container">
-      <div>
+      
+      <div className="links">
         <h2>¿Que necesitas?</h2>
         <ul>
           <li><Link to="/preg">Preguntas frecuentes</Link></li>
@@ -22,10 +23,13 @@ function Info() {
           <li><Link to="/tec">Tecnologias emergentes</Link></li>
         </ul>
       </div>
-
-      <div>
-          <h1> Si tenes alguna duda sobre paneles solares puedes coonsultar nuestro catalogo</h1>
+      <div className="content">
+        <div className="title">
+            <h1> Si tenes alguna duda sobre paneles solares puedes coonsultar nuestro catalogo</h1>
+        </div>
       </div>
+
+      
       
     </div>
     <Outlet></Outlet>
