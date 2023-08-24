@@ -14,9 +14,9 @@
     text-align: center;
     margin: 20px;
     padding: 20px;
-    border: 3px solid #0b5207a9;
+    border: 3px solid #7a7a4d;
     border-radius: 5px;
-    background-color: #0aec7098;
+    background-color: #b4b473;
 }
 
 .calculator h2 {
@@ -34,9 +34,12 @@
     margin-bottom: 10px;
     border: 3px solid #12d708a9;
 }
-
+.calculator h1{
+    padding: 0;
+}
 .calculator button {
-    background-color: green;
+    background-color: rgb(131, 112, 85);
+    padding: 0;
     color: white;
     padding: 5px 10px;
     border: none;

@@ -13,9 +13,7 @@ function Info() {
   return (
     <>
     <div className="main-container">
-      <div
-        className={`barra ${sidebarVisible ? 'active' : ''}`}
-      >
+      <div>
         <h2>¿Que necesitas?</h2>
         <ul>
           <li><Link to="/preg">Preguntas frecuentes</Link></li>
@@ -25,13 +23,10 @@ function Info() {
         </ul>
       </div>
 
-
-      <h1> Si tenes alguna duda sobre paneles solares puedes coonsultar nuestro catalogo</h1>
-      <div className="button-container">
-      <button className="button" onClick={toggleSidebar}>
-        &#9776; Mas info
-      </button>
+      <div>
+          <h1> Si tenes alguna duda sobre paneles solares puedes coonsultar nuestro catalogo</h1>
       </div>
+      
     </div>
     <Outlet></Outlet>
     </>

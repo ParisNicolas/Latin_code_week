@@ -11,7 +11,7 @@ const Calcualdora = () => {
         const costoElectricidad = 21.855;
         const ahorroMensual = consumoMensual * costoElectricidad;
 
-        setResultado(`El ahorro mensual estimado con paneles solares es de $${ahorroMensual.toFixed(2)}.`);
+        setResultado(`El ahorro mensual estimado con paneles solares es de $${ahorroMensual.toFixed(2)} 💸💸.`);
     };
 
     const toggleInfo = () => {
@@ -25,12 +25,12 @@ const Calcualdora = () => {
             <h2>Calculadora de Ahorro-Consumo</h2>
             <label htmlFor="consumo">Consumo de Electricidad Mensual (kWh):</label>
             <input type="number" id="consumo" placeholder="Coloque su gasto en kWh - Aplicable para Argentina" value={consumoMensual} onChange={(e) => setConsumoMensual(e.target.value)} />
-            <button onClick={calcularAhorro}>Calcular</button>
+            <button onClick={calcularAhorro}><h3>Calcular</h3></button>
             <p className="resultado">{resultado}</p>
 
             <div>
             <button onClick={toggleInfo}>
-            Datos Interesantes
+            <h3>Datos Interesantes</h3>
             </button>
             {mostrarInfo && (
                         <div className="info-text">

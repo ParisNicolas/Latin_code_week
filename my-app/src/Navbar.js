@@ -6,8 +6,9 @@ function Navbar() {
     return (
       <>
         <nav className="navbar">
-            <ul className="nav-links">
-            <div className="logo">
+            <img src="/itrlogo.png" width="100"/>
+            <ul className="nav-links"> 
+            <div className="logo" >
                 <img src="https://1000marcas.net/wp-content/uploads/2019/12/logo-Renault.png" alt="Logo" />
             </div>
                 <li><Link to="/">PRINCIPAL</Link></li>
