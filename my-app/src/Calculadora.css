@@ -32,13 +32,14 @@
     width: 100%;
     padding: 5px;
     margin-bottom: 10px;
-    border: 3px solid #12d708a9;
+    border-radius: 5px;
+    border: 2px solid #7c6a50;
 }
 .calculator h1{
     padding: 0;
 }
 .calculator button {
-    background-color: rgb(131, 112, 85);
+    background-color: #837055;
     padding: 0;
     color: white;
     padding: 5px 10px;
@@ -48,7 +49,7 @@
 }
 
 .calculator button:hover {
-    background-color: rgb(28, 242, 28);
+    background-color: #9e907e;
 }
 
 .calculator p {

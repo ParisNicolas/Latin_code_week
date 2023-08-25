@@ -10,6 +10,15 @@
 
 .title{
   margin-left: 260px;
+  position: relative; /* Agregamos posición relativa para posicionar elementos hijos de manera relativa a este contenedor */
+}
+
+.title h1 {
+  margin-top: -275px; /* Ajusta el margen superior del h1 para bajarlo */
+}
+
+.title iframe {
+  margin-top: 20px; /* Ajusta el margen superior del iframe para bajarlo */
 }
 
 .links{
@@ -54,7 +63,7 @@
 
   .info-text {
     background-color: rgb(255, 255, 172); /* Fondo amarillo */
-    border: 2px solid green; /* Borde verde de 2px */
+    border: 2px solid rgb(139, 139, 104); /* Borde verde de 2px */
     border-radius: 20px; /* Esquinas circulares */
     padding: 10px; /* Espaciado interno */
     margin-top: 10px; /* Margen superior para separar del botón */
@@ -63,3 +72,13 @@
   .size-text {
     font-size: 12px;
   }
+
+  .items {
+    text-decoration: none;
+    color: rgb(14, 17, 187);
+    transition: color 0.3s ease-in-out;
+}
+
+.items :hover {
+    color: rgb(230, 28, 28);
+}

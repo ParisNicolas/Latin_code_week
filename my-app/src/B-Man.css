@@ -25,3 +25,20 @@
     list-style: disc;
     margin-left: 20px;
 }
+
+.regresar{
+    background-color:rgb(215, 176, 108);
+    padding: 15px 30px;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.regresar button:hover {
+    background-color: #9e907e;
+}

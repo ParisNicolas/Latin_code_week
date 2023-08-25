@@ -1,8 +1,12 @@
-import React, {useEffect} from "react";
-import "./game.css"
+import react from "react";
+import {useState} from 'react';
+import {useEffect} from 'react';
+import "./Juego.css"
 
 
 function Juego() {
+
+  const [mostrarTuto, setMostrarTuto] = useState(false);
       
   function reset(){
     const iframe = document.getElementById('miIframe');
@@ -10,17 +14,35 @@ function Juego() {
     console.log(iframe.src)
   }
 
+  const toggleInfo = () => {
+    setMostrarTuto(!mostrarTuto);
+};
+
     return (
+      <>
       <div className="main-container"> 
       <div className="containerGame">
-        <h1>Juego</h1>
-        <h3>Rápido mi eco-amigo trata de encender todos los foquitos, y evita que tu eficencia baje. Sino tu panel se rompera!!.</h3>
-        <div id="iframeContainer">
-          <iframe id="miIframe" src="/galaga/index.html"></iframe>
+        <h2>Solaris Stike</h2>
+        <div> 
+          <h4>Bienvenido mi Eco-Amigo a un juego donde prenderas focos para que brillen como tu.</h4>
+          
         </div>
-        <button id="resetButton" onClick={reset}>Reset</button>
+        <button id="resetButton" onClick={toggleInfo}> 
+          Como jugar 
+        </button>
+        {mostrarTuto && (
+                        <div className="info-text">
+                            <p>¿Cómo sacar el consumo mensual en kWh?</p>
+                            
+                        </div>
+                    )}
+          <div id="iframeContainer">
+            <iframe id="miIframe" src="/galaga/index.html"></iframe>
+         </div>
+          <button id="resetButton" onClick={reset}>Reset</button>
+        </div>
       </div>
-      </div>
+      </>
     );
   }
   

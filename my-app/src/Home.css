@@ -19,6 +19,7 @@
 
 .title {
     display: flex;
+    position: absolute;
     align-items: center;
     margin-bottom: 10px; /* Espaciado inferior */
 }
@@ -27,6 +28,7 @@
     width: 60px; /* Ajusta el tamaño de las imágenes de sol */
     height: 60px;
     margin-right: 10px; /* Espaciado derecho entre las imágenes y el título */
+    margin-left: 10px;
 }
 
 .title-text {
