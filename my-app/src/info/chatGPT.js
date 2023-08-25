@@ -7,9 +7,9 @@ const Chatbot = () => {
 
   const handleSubmit = async (question) => {
     try {
-      const apiKey = 'tu-api-key'; // Reemplaza con tu clave de API de OpenAI
+      const apiKey = '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';
       const response = await axios.post(
-        'https://api.openai.com/v1/engines/davinci-codex/completions',
+        'https://api.openai.com/v1/completions',
         {
           prompt: `Duda de eficiencia energética: ${question}`,
           max_tokens: 50, // Ajusta según tus necesidades
