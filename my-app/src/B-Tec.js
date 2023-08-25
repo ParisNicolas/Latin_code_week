@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Outlet } from "react-router-dom";
 import './B-Man.css'; 
 
 function Btec(){
@@ -28,6 +29,7 @@ return(
         </h4>
     </ul>
     </div>
+    <Link  className="regresar" to="/info">Regresar</Link>
     </div>
     </>
 );

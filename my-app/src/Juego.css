@@ -1,39 +1,66 @@
 /* Estilo del contenedor del iframe */
 #iframeContainer {
-    border: 2px solid #b4b473; /* Color del borde y grosor */
-    border-radius: 10px; /* Bordes redondeados */
-    overflow: hidden; /* Oculta contenido que se desborda */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
-    margin: auto;
-    width: 600px;
-    height: 400px;
-  }
-  
-  /* Estilo del iframe */
-  #iframeContainer iframe {
-    width: 100%; 
-    height: 100%; 
-    border: none; 
-  }
-  
-  /* Estilo del botón de reseteo (opcional) */
-  #resetButton {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-    display: block;
-    margin: 10px auto;
-    padding: 14px 28px; 
-    font-size: 15px;
-    background-color: #b4b473;
-    color: rgb(15, 14, 14);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  border: 2px solid #b4b473;
+  /* Color del borde y grosor */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  overflow: hidden;
+  /* Oculta contenido que se desborda */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Sombra */
+  margin: auto;
+  width: 600px;
+  height: 400px;
 }
-  
-  /* Cambia el color del botón al pasar el mouse por encima */
-  #resetButton:hover {
-    background-color: #e3e3c1;
-  }
 
-  
+/* Estilo del iframe */
+#iframeContainer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Estilo del botón de reseteo (opcional) */
+#resetButton {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+  display: block;
+  margin: 10px auto;
+  padding: 14px 28px;
+  font-size: 15px;
+  background-color: #b4b473;
+  color: rgb(15, 14, 14);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Cambia el color del botón al pasar el mouse por encima */
+#resetButton:hover {
+  background-color: #e3e3c1;
+}
+
+.cuadro-amarillo {
+  background-color: #ffffcc; /* Fondo amarillo suave */
+  padding: 10px;
+  border: 2px solid #f0e68c; /* Borde blanco */
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+  width: 250px; /* Ancho del cuadro */
+  margin: 0 auto; /* Centrar el cuadro horizontalmente */
+}
+
+/* Estilos para los títulos dentro del cuadro */
+.cuadro-amarillo h3 {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+/* Estilos para los párrafos dentro del cuadro */
+.cuadro-amarillo p {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  margin: 5px 0;
+}

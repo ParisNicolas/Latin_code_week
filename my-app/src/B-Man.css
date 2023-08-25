@@ -5,7 +5,8 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
 }
 
 .tarjeta2 { 
@@ -28,7 +29,8 @@
 
 .regresar{
     background-color:rgb(215, 176, 108);
-    padding: 15px 30px;
+    width: 150px;
+    height: 40px;
     color: white;
     padding: 5px 10px;
     border: none;

@@ -1,3 +1,4 @@
+
 .main-container {
     background-image: url('https://img.freepik.com/foto-gratis/fondo-acuarela-verde_95678-443.jpg'); /* Reemplaza con la ruta de tu imagen de fondo */
     background-size: cover;
@@ -73,12 +74,21 @@
     font-size: 12px;
   }
 
+  .items-container {
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección a columna para alinear verticalmente */
+    align-items: start; /* Puedes cambiar esto a 'flex-start', 'center', o 'flex-end' según tus necesidades */
+    margin-left: 28px;
+    list-style: none;
+    padding: 0;
+  }
+  
   .items {
     text-decoration: none;
-    color: rgb(14, 17, 187);
+    color: #753b01;
     transition: color 0.3s ease-in-out;
-}
-
-.items :hover {
-    color: rgb(230, 28, 28);
-}
+  }
+  
+  .items:hover {
+    color: rgb(0, 0, 0);
+  }

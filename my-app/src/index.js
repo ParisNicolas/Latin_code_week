@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Navbar from './Navbar';
 import Home from './Home';
 import Juego from './Juego';
-import Info from './Info';
+import Info from './info/Info';
 import Bman from './B-Man';
 import Bpreg from './B-Preg';
 import Btec from './B-Tec';
