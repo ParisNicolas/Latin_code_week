@@ -6,20 +6,23 @@
     min-height: 100vh;
     display: flex;
     flex-direction: row;
-    position: relative;
 }
 
-.title{
+.content{
   margin-left: 260px;
-  position: relative; /* Agregamos posición relativa para posicionar elementos hijos de manera relativa a este contenedor */
+  display: flex;
+  flex-direction: column;
+}
+.content iframe{
+  margin-top: 100px;
 }
 
-.title h1 {
-  margin-top: -275px; /* Ajusta el margen superior del h1 para bajarlo */
-}
-
-.title iframe {
-  margin-top: 20px; /* Ajusta el margen superior del iframe para bajarlo */
+.responce{
+  background-color: rgba(0, 0, 0, 0.247);
+  border-radius: 10px;
+  padding: 8px;
+  text-align: left;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .links{
@@ -41,26 +44,6 @@
 }
 
 
-
-.button-container {
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-  }
-
-.button {
-    z-index: 1;
-    cursor: pointer;
-    font-size: 20px;
-    font-size: 24px; /* Cambiar el tamaño de la fuente */
-    background-color: black; /* Cambiar el color de fondo a negro */
-    color: green; /* Cambiar el color del texto a verde */
-    border: none; /* Eliminar el borde */
-    padding: 10px 20px;
-    border-radius: 4px;
-    width: 190px; /* Ajustar el ancho del botón */
-    height: 100px;
-  }
 
   .info-text {
     background-color: rgb(255, 255, 172); /* Fondo amarillo */

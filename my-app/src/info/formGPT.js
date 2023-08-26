@@ -9,6 +9,7 @@ const Form = ({ handleSubmit }) => {
 
   const submitForm = (e) => {
     e.preventDefault();
+    console.log(question);
     handleSubmit(question);
   };
 

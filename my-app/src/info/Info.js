@@ -24,11 +24,11 @@ function Info() {
         </ul>
       </div>
       <div className="content">
-        <div className="title">
-            <h1> Si tenes alguna duda sobre paneles solares puedes coonsultar nuestro catalogo</h1>
-            <Chatbot />
-            <iframe src="https://wordwall.net/embed/7509c1f3f1a040149c4f0530388131b8?themeId=1&templateId=3&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <h1> Si tenes alguna duda sobre paneles solares puedes coonsultar nuestro catalogo</h1>
+        <br/>
+        <Chatbot />
+        <br/>
+        <iframe src="https://wordwall.net/embed/7509c1f3f1a040149c4f0530388131b8?themeId=1&templateId=3&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
       </div>
 
       
