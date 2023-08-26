@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import './B-Man.css'; 
+import './css/B-Man.css'; 
 
 function Btec(){
 

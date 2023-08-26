@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Calculadora.css'; 
+import './css/Calculadora.css'; 
 
 const Calcualdora = () => {
 

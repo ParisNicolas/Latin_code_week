@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import './Info.css'; 
-import Form from './formGPT'
+import './css/Info.css'; 
 import Chatbot from "./chatGPT"
 
 function Info() {

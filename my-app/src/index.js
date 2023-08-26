@@ -4,11 +4,11 @@ import Navbar from './Navbar';
 import Home from './Home';
 import Juego from './Juego';
 import Info from './info/Info';
-import Bman from './B-Man';
-import Bpreg from './B-Preg';
-import Btec from './B-Tec';
-import Bven from './B-Ven';
-import './index.css';
+import Bman from './info/B-Man';
+import Bpreg from './info/B-Preg';
+import Btec from './info/B-Tec';
+import Bven from './info/B-Ven';
+import './css/index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Calcualdora from './Calculadora';
