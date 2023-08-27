@@ -1,5 +1,6 @@
 import React from "react";
 import './css/B-Ven.css'; 
+import { Link} from "react-router-dom";
 
 function Bpreg(){
 
@@ -31,6 +32,7 @@ return(
         </h4>
     </ul>
     </div>
+    <Link  className="regresar" to="/info">Regresar</Link>
     </div>
     </>
 );

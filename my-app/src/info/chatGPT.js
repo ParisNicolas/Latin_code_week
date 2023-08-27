@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import Form from './formGPT';
+import "./css/chatbot.css"
 
 const Chatbot = () => {
   const [response, setResponse] = useState('');
 
   const handleSubmit = async (question) => {
     try {
-      const apiKey = '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';
+      const apiKey = 'Pon tu api key aqui';
       const response = await axios.post(
         'https://api.openai.com/v1/completions',
         {
           model: "text-davinci-003",
-          prompt: `Se mi sabio sobre eficiencia energetica. Utiliza un formato html, contesta de manera formal y creativa la siguiente pregunta/pedido: ${question}`,
+          prompt: `Se mi sabio sobre eficiencia energetica. Utiliza un formato html para ponerlo lindo, contesta de manera formal y creativa la siguiente pregunta/pedido: ${question}`,
           max_tokens: 1000 // Ajusta según tus necesidades
         },
         {
@@ -31,7 +32,7 @@ const Chatbot = () => {
 
   return (
     <div>
-      <h1>Chatbot de Eficiencia Energética</h1>
+      <h1><em>Chatbot de Eficiencia Energética</em></h1>
       <Form handleSubmit={handleSubmit} />
       {response && (
         <div className='responce'>

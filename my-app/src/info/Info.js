@@ -1,14 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import './css/Info.css'; 
 import Chatbot from "./chatGPT"
 
 function Info() {
-  const [sidebarVisible, setSidebarVisible] = useState(false);
-
-  const toggleSidebar = () => {
-    setSidebarVisible(!sidebarVisible);
-  };
 
   return (
     <>
@@ -24,11 +19,9 @@ function Info() {
         </ul>
       </div>
       <div className="content">
-        <h1> Si tenes alguna duda sobre paneles solares puedes coonsultar nuestro catalogo</h1>
+        <h1>Si tenes alguna duda sobre paneles solares puedes coonsultar nuestro catalogo</h1>
         <br/>
         <Chatbot />
-        <br/>
-        <iframe src="https://wordwall.net/embed/7509c1f3f1a040149c4f0530388131b8?themeId=1&templateId=3&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
       </div>
 
       

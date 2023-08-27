@@ -1,5 +1,6 @@
 import React from "react";
 import './css/B-Ven.css'; 
+import { Link} from "react-router-dom";
 
 function Bven(){
 
@@ -16,6 +17,7 @@ return(
         <h4><strong style={{ color: 'rgb(123, 19, 21)' }}>Incentivos y Subsidios: </strong> En muchos lugares, hay incentivos gubernamentales y programas de subsidios disponibles para alentar la instalación de sistemas solares. Estos programas pueden reducir significativamente los costos iniciales de inversión.</h4>
     </ul>
     </div>
+    <Link  className="regresar" to="/info">Regresar</Link>
     </div>
     </>
 );

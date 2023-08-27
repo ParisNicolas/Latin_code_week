@@ -15,14 +15,15 @@ const Form = ({ handleSubmit }) => {
 
   return (
     <div>
-      <form onSubmit={submitForm}>
+      <form onSubmit={submitForm} className='chatbot-bar'>
         <input
           type="text"
           placeholder="Escribe tu pregunta sobre eficiencia energética..."
           value={question}
           onChange={handleChange}
+          className='chatbot-input'
         />
-        <button type="submit">Enviar</button>
+        <button type="submit" className='chatbot-button'>Enviar</button>
       </form>
     </div>
   );
