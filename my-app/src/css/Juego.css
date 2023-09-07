@@ -64,3 +64,19 @@
   monospace;
   margin: 5px 0;
 }
+
+.barraspace{
+  height: 50px;
+  width: 140px;
+  display: inline;
+}
+
+.Flechas{
+  height: 50px;
+  width: 50px;
+  display: inline;
+}
+
+.zzz{
+  display: inline;
+}

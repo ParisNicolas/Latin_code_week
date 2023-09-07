@@ -35,8 +35,11 @@ function Juego() {
             <div id="tuto-text">
               <div class="cuadro-amarillo">
                 <h3>Controles:</h3>
-                <p>Barra de espacio: Disparar e iniciar el juego por primera vez</p>
-                <p>Flechas izquierda y derecha: Movimiento</p>
+                <p>DISPARAR</p>
+                <img className="barraspace" src="https://lh5.googleusercontent.com/Aa9Il6EDRphuEvqrCTIOMd9gqdkmHmO65Lb8SzqOLIAuqXqr1OgmHqwXQtc831b62fUCBXQAstCpUEFUxmzwpQi37qdHRysKfTjb4UdF7-eqoAvG0Nn09RbEAQAVQWOMLA"></img>
+                <p>MOVIMIENTOS</p>
+                <img className="Flechas" src="https://cdn-icons-png.flaticon.com/512/31/31931.png"></img>
+                <img className="Flechas" src="https://cdn-icons-png.flaticon.com/512/30/30997.png"></img>
                 <br></br>
                 <h3>Power Ups:</h3>
                 <p>Martillo: Otorga un escudo temporal</p>
