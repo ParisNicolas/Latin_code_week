@@ -13,7 +13,7 @@ function Navbar() {
             </div>
                 <li><Link to="/">PRINCIPAL</Link></li>
                 <li><Link to="/info">INFO</Link></li>
-                <li><Link to="/juego">SOLARIS</Link></li>
+                <li><Link to="/juegos">JUEGOS</Link></li>
                 <li><Link to="/calculadora">CALCULADORA</Link></li>
             <div className="logo">
                 <img src="https://1000marcas.net/wp-content/uploads/2019/12/logo-Renault.png" alt="Logo" />

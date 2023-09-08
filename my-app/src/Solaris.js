@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import "./css/Juego.css"
 
 
-function Juego() {
+function Solaris() {
 
   const [mostrarTuto, setMostrarTuto] = useState(false);
 
@@ -22,7 +22,7 @@ function Juego() {
     <>
       <div className="main-container">
         <div className="containerGame">
-          <h2>Solaris Stike</h2>
+          <h1 className="titulo-juego">Solaris Stike</h1>
           <div>
             <h4>Bienvenido, mi Eco-Amigo, a una aventura única donde te convertirás en un maestro de la energía solar.</h4>
             <p>En 'Solaris Strike', te sumergirás en el emocionante mundo de los paneles solares y la iluminación ecológica. Tu misión es ayudar a que los focos brillen como nunca antes al dirigir rayos de luz solar hacia ellos.</p>
@@ -41,8 +41,12 @@ function Juego() {
                 <img className="Flechas" src="https://cdn-icons-png.flaticon.com/512/31/31931.png"></img>
                 <img className="Flechas" src="https://cdn-icons-png.flaticon.com/512/30/30997.png"></img>
                 <br></br>
-                <h3>Power Ups:</h3>
-                <p>Martillo: Otorga un escudo temporal</p>
+                <p>POWER UPS:</p>
+                <img className="martillo" src="/galaga/powerUp1.png"></img>
+                <p className="zzz">Repara tu panel y otorga un escudo temporal</p>
+                <br></br>
+                <img className="martillo" src="/galaga/sol_powerup.png"></img>
+                <p className="zzz">Sobrecarga energia y otorga un rallo laser</p>
               </div>
             </div>
           )}
@@ -57,4 +61,4 @@ function Juego() {
   );
 }
 
-export default Juego;
+export default Solaris;

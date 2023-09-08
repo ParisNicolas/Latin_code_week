@@ -46,7 +46,7 @@
   border: 2px solid #f0e68c; /* Borde blanco */
   border-radius: 5px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
-  width: 250px; /* Ancho del cuadro */
+  width: 270px; /* Ancho del cuadro */
   margin: 0 auto; /* Centrar el cuadro horizontalmente */
 }
 
@@ -79,4 +79,27 @@
 
 .zzz{
   display: inline;
+}
+
+.martillo{
+  margin-bottom: -12px;
+  height: 45px;
+  width: 40px;
+  display: inline;
+}
+
+.titulo-juego {
+  font: bold 80px;
+  text-transform: uppercase;
+  color: #c69c1e;
+  text-shadow: 0  2px  0   #ffbf00,
+               0  4px  0   #c2981a,
+               0  6px  0   #9c6a0f, 
+               0  8px  0   #c8730a, 
+              3px 8px 15px rgba(0,0,0,0.1),
+              3px 8px  5px rgba(0,0,0,0.3);
+}
+
+.containerGame{
+  padding: 15px;
 }

@@ -12,10 +12,14 @@ function Info() {
       <div className="links">
         <h2>¿Que necesitas?</h2>
         <ul className="items-container">
-          <li><Link className="items" to="/preg">* Preguntas frecuentes</Link></li>
-          <li><Link className="items" to="/man">* Mantenimiento</Link></li>
-          <li><Link className="items" to="/ven">* Ventajas</Link></li>
-          <li><Link className="items" to="/tec">* Tecnologias emergentes</Link></li>
+          <div><Link className="items" to="/preg"> Preguntas frecuentes</Link></div>
+          <br></br>
+          <div><Link className="items" to="/man"> Mantenimiento</Link></div>
+          <br></br>
+          <div><Link className="items" to="/ven"> Ventajas</Link></div>
+          <br></br>
+          <div><Link className="items" to="/tec"> Tecnologias emergentes</Link></div>
+          <br></br>
         </ul>
       </div>
       <div className="content">

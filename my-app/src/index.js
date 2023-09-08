@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Navbar from './Navbar';
 import Home from './Home';
-import Juego from './Juego';
+import Juegos from './Juegos';
 import Info from './info/Info';
 import Bman from './info/B-Man';
 import Bpreg from './info/B-Preg';
@@ -24,7 +24,7 @@ root.render(
           <Route path="man" index element={<Bman />} />
           <Route path="tec" index element={<Btec />} />
           <Route path="preg" index element={<Bpreg />} />
-          <Route path="juego" element={<Juego />} />
+          <Route path="juegos" element={<Juegos />} />
           <Route path="info" element={<Info />} />
           <Route path="calculadora" element={<Calcualdora />} />
         </Route>
