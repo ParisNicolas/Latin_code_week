@@ -1,18 +1,18 @@
 let preguntas = [
-    { p: "¿Apagar los dispositivos electrónicos cuando no se utilizan ayuda a ahorrar energía?"},
-    { p: "¿Cambiar las bombillas incandescentes por bombillas LED reduce el consumo de energía?"},
-    { p: "¿Dejar los electrodomésticos en modo de espera consume la misma energía que cuando están encendidos?"},
-    { p: "¿Utilizar cortinas o persianas térmicas puede ayudar a mantener la temperatura de tu hogar y reducir el uso de calefacción o aire acondicionado?"},
-    { p: "¿Descongelar regularmente el congelador puede aumentar su eficiencia energética?"},
-    { p: "¿Dejar correr el agua caliente innecesariamente consume más energía que calentar solo la cantidad de agua necesaria?"},
-    { p: "¿Los paneles solares son una forma efectiva de generar energía limpia y reducir los costos de electricidad a largo plazo?"},
-    { p: "¿Dejar la nevera abierta por un tiempo corto no afecta significativamente su eficiencia energética?"},
-    { p: "¿Apagar y encender las luces con frecuencia consume más energía que dejarlas encendidas constantemente?"},
-    { p: "¿Utilizar electrodomésticos con etiqueta de eficiencia energética A+ consume menos electricidad?"},
-    { p: "¿El reciclaje de papel ayuda a ahorrar energía en comparación con la producción de papel nuevo?"},
-    { p: "¿Dejar cargadores de dispositivos enchufados sin usarlos consume energía?"},
-    { p: "¿Cerrar las puertas y ventanas durante el invierno ayuda a mantener la temperatura interior y a ahorrar energía en calefacción?"},
-    { p: "¿Dejar encendidos los electrodomésticos en modo de espera es una práctica eficiente desde el punto de vista energético?"},
+    { p: "¿Apagar los dispositivos electrónicos cuando no se utilizan ayuda a ahorrar energía?"},//1
+    { p: "¿Cambiar las bombillas incandescentes por bombillas LED reduce el consumo de energía?"},//2
+    { p: "¿Dejar los electrodomésticos en modo de espera consume la misma energía que cuando están encendidos?"},//3
+    { p: "¿Utilizar cortinas o persianas térmicas puede ayudar a mantener la temperatura de tu hogar y reducir el uso de calefacción o aire acondicionado?"},//4
+    { p: "¿Descongelar regularmente el congelador puede aumentar su eficiencia energética?"},//5
+    { p: "¿Dejar correr el agua caliente innecesariamente consume más energía que calentar solo la cantidad de agua necesaria?"},//6
+    { p: "¿Los paneles solares son una forma efectiva de generar energía limpia y reducir los costos de electricidad a largo plazo?"},//7
+    { p: "¿Dejar la nevera abierta por un tiempo corto no afecta significativamente su eficiencia energética?"},//8
+    { p: "¿Apagar y encender las luces con frecuencia consume más energía que dejarlas encendidas constantemente?"},//9
+    { p: "¿Utilizar electrodomésticos con etiqueta de eficiencia energética A+ consume menos electricidad?"},//10
+    { p: "¿El reciclaje de papel ayuda a ahorrar energía en comparación con la producción de papel nuevo?"},//11
+    { p: "¿Dejar cargadores de dispositivos enchufados sin usarlos consume energía?"},//12
+    { p: "¿Cerrar las puertas y ventanas durante el invierno ayuda a mantener la temperatura interior y a ahorrar energía en calefacción?"},//13
+    { p: "¿Dejar encendidos los electrodomésticos en modo de espera es una práctica eficiente desde el punto de vista energético?"},//14
     { p: "¿Los automóviles híbridos tienden a ser menos eficientes en términos de consumo de combustible que los automóviles convencionales?"},
   ];
   
@@ -39,21 +39,22 @@ let preguntas = [
   
   let imagenes = [
     { im: ''}, 
-    { im: '/Images/Foto1.jpg'},
-    { im: '/Images/Foto2.jpg'},
-    { im: '/Images/Foto3.jpg'},
-    { im: '/Images/Foto4.png'},
-    { im: '/Images/Foto5.png'},
-    { im: '/Images/Foto6.png'},
-    { im: '/Images/Foto7.png'},
-    { im: '/Images/Foto8.png'},
-    { im: '/Images/Foto9.png'},
-    { im: '/Images/Foto10.jpg'},
-    { im: '/Images/Foto11.jpg'},
-    { im: '/Images/Foto12.png'},
-    { im: '/Images/Foto13.jpg'},
-    { im: '/Images/Foto14.png'},
-    { im: '/Images/Foto15.jpg'},
+    { im: 'Foto1.jpg'},
+    { im: 'Foto2.jpg'},
+    { im: 'Foto3.jpg'},
+    { im: 'Foto4.jpg'},
+    { im: 'Foto5.jpg'},
+    { im: 'Foto6.jpg'},
+    { im: 'Foto7.jpg'},
+    { im: 'Foto8.jpg'},
+    { im: 'Foto9.jpg'},
+    { im: 'Foto10.jpg'},
+    { im: 'Foto11.jpg'},
+    { im: 'Foto12.jpg'},
+    { im: 'Foto13.jpg'},
+    { im: 'Foto14.jpg'},
+    { im: 'Foto15.jpg'},
+   
   ];
   
   
