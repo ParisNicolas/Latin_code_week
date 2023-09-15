@@ -10,17 +10,25 @@
 
 
 .calculator {
-
+    background-image: url("https://okdiario.com/img/2017/10/12/matematicas-e1507820053741.jpg");
     text-align: center;
     margin: 20px;
     padding: 20px;
-    border: 2px solid #7a7a4d;
-    border-radius: 5px;
-    background-color: #b4b473;
+    border: 2px solid #aeab7e;
+    border-radius: 10px;
+    background-color: #aeab7e;
 }
 
 .calculator h2 {
     margin-bottom: 10px;
+}
+
+.text-aux{
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #5EB160;
+    border-radius: 10px;
+    background-color: #aeab7e;
 }
 
 .calculator label {
@@ -33,13 +41,13 @@
     padding: 5px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 2px solid #7c6a50;
+    border: 2px solid #5EB160;
 }
 .calculator h1{
     padding: 0;
 }
 .calculator button {
-    background-color: #837055;
+    background-color: #5EB160;
     padding: 0;
     color: white;
     padding: 5px 10px;
@@ -49,7 +57,20 @@
 }
 
 .calculator button:hover {
-    background-color: #9e907e;
+    background-color: #aeab7e;
+}
+
+.resultado{
+    background-color: #aeab7e; /* Fondo amarillo */
+    border: 2px solid #5EB160; /* Borde verde de 2px */
+    border-radius: 20px; /* Esquinas circulares */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 10px; /* Margen superior para separar del botón */
+    max-width: 600px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente en el centro del contenedor */
+    text-align: center;
 }
 
 .calculator p {

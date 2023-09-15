@@ -16,9 +16,9 @@ function Home() {
                 <p className="description">Además de ser ecológicos, los paneles solares también pueden ayudarte a ahorrar dinero a largo plazo al reducir tus facturas de electricidad. ¡Es una forma inteligente de aprovechar la energía del sol!</p>
 
                 <div className="paneles">
-                <img src="https://www.fiixcom.mx/es/img/iconos/paneles-1.png" alt="pan1" className="pan1-image" />
+             
                 <img src="https://www.labodegasolar.com/cdn/shop/articles/placas-solares-tejado-thinkstock-getty-1662535982.jpg?v=1667323017" alt="Panel" className="panel-image" />
-                <img src="https://www.fiixcom.mx/es/img/iconos/paneles-1.png" alt="pan1" className="pan1-image" />
+               
                 </div>
             </div>
         </div>

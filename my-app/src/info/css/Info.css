@@ -39,8 +39,8 @@
 
 
   .info-text {
-    background-color: rgb(255, 255, 172); /* Fondo amarillo */
-    border: 2px solid rgb(139, 139, 104); /* Borde verde de 2px */
+    background-color: #fcf6a3; /* Fondo amarillo */
+    border: 2px solid #5EB160; /* Borde verde de 2px */
     border-radius: 20px; /* Esquinas circulares */
     padding: 10px; /* Espaciado interno */
     margin-top: 10px; /* Margen superior para separar del botón */

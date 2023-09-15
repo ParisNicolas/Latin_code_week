@@ -12,8 +12,8 @@ function Juegos() {
 
     return (
         <>
-        <div>
-            <select onChange={handleGame}>
+        <div className="miBarra">
+            <select onChange={handleGame} className= "barra">
                 <option value="solaris">Solaris</option>
                 <option value="cuestionario">Cuestionario</option>
             </select>

@@ -1,0 +1,8 @@
+.custom-card {
+    width: 300px; /* Define el ancho deseado para la tarjeta */
+    margin: 0 auto; /* Centra la tarjeta horizontalmente */
+    margin-top: 50px; /* Espacio en la parte superior */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    
+}

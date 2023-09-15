@@ -1,7 +1,7 @@
 import react from "react";
 import { useState } from 'react';
 import { useEffect } from 'react';
-import "./css/Juego.css"
+import "./css/Solaris.css"
 
 
 function Solaris() {
