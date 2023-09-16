@@ -25,6 +25,10 @@ let menu = true, bg;
 let firstTime = true;
 
 
+//Movimiento de celular
+let moving=false;
+let direction=false;
+
 function preload(){
   bullets = new Group();
   enemies = new Group();
@@ -62,16 +66,21 @@ function draw() {
     
 //_____Pantalla de inicio______
   }else{
-    background(bg);
-    fill(255);
-    textSize(30);
-    textFont(font);
-    text("press 'space' to start", 50, height/2);
-    textSize(8);
-    text("Use 'space' to shoot", width-160, height/2-40);
-    if(kb.pressing('space')){
-      menu = false;
+    if(firstTime){
+      //Empezar con tactil
+      document.addEventListener("touchstart", () => {menu=false; firstTime=true}, {once : true});
+      firstTime=false;
     }
+      background(bg);
+      fill(255);
+      textSize(30);
+      textFont(font);
+      text("press 'space' to start", 50, height/2);
+      textSize(8);
+      text("Use 'space' to shoot", width-160, height/2-40);
+      if(kb.pressing('space')){
+        menu = false;
+      }
   }
 }
 
@@ -105,6 +114,20 @@ function setup2() {
         bullet.remove();
         points++
       });
+      /*
+      window.addEventListener("deviceorientation", (event)=>{
+        let beta = Math.round(event.beta);
+        let gamma = Math.round(event.gamma);
+        if(beta<-20 || gamma<-20){
+          moving=true;
+          direction=false;
+        }else if(beta>20 || gamma>20){
+          moving=true;
+          direction=true;
+        }else{
+          moving=false;
+        }
+      }, true);*/
 }
 
 function game_render() {
@@ -143,6 +166,12 @@ function game_render() {
   }
   
   //---------------MOVIMIENTO DE LA NAVE--------------
+  if(moving && navy.x > 25 && navy.x < width-27){
+    if(!direction) navy.vel.x = -8;
+    else navy.vel.x = 8;
+  }
+  //else navy.vel.x = 0;
+
   if (kb.pressing('left') && navy.x > 25){
     navy.vel.x = -8;
   }
