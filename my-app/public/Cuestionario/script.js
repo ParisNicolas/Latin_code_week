@@ -32,7 +32,7 @@ let preguntas = [
     { r: "si" },//--13
     { r: "no" },//--14
     { r: "no" },//--15
-    
+    { r: ""},
 
   ];
   
@@ -55,6 +55,26 @@ let preguntas = [
    
   ];
   
+  let explicaciones = [
+    {e: ""},
+    {e: ""},
+    {e: " INCORRECTO -- Apagar los dispositivos electrónicos cuando no se utilizan ayuda a ahorrar energía."},
+    {e: " INCORRECTO -- Cambiar las bombillas incandescentes por bombillas LED reduce el consumo de energía."},
+    {e: " INCORRECTO -- Dejar los electrodomésticos en modo de espera consume algo de energía."},
+    {e: " INCORRECTO -- Utilizar cortinas o persianas térmicas puede ayudar a mantener la temperatura de tu hogar y reducir el uso de calefacción o aire acondicionado."},
+    {e: " INCORRECTO -- Descongelar regularmente el congelador puede aumentar su eficiencia energética."},
+    {e: " INCORRECTO -- Dejar correr el agua caliente innecesariamente consume más energía que calentar solo la cantidad de agua necesaria."},
+    {e: " INCORRECTO -- Los paneles solares son una forma efectiva de generar energía limpia y reducir los costos de electricidad a largo plazo."},
+    {e: " INCORRECTO -- Dejar la nevera abierta por un tiempo corto afecta significativamente su eficiencia energética."},
+    {e: " INCORRECTO -- Apagar y encender las luces con frecuencia no consume más energía que dejarlas encendidas constantemente."},
+    {e: " INCORRECTO -- Utilizar electrodomésticos con etiqueta de eficiencia energética A+ consume menos electricidad."},
+    {e: " INCORRECTO -- El reciclaje de papel ayuda a ahorrar energía en comparación con la producción de papel nuevo."},
+    {e: " INCORRECTO -- Dejar cargadores de dispositivos enchufados sin usarlos consume una pequeña cantidad de energía."},
+    {e: " INCORRECTO -- Cerrar las puertas y ventanas durante el invierno ayuda a mantener la temperatura interior y a ahorrar energía en calefacción."},
+    {e: " INCORRECTO -- Dejar encendidos los electrodomésticos en modo de espera no es una práctica eficiente desde el punto de vista energético."},
+    {e: " INCORRECTO -- Los automóviles híbridos tienden a ser más eficientes en términos de consumo de combustible que los automóviles convencionales."},
+
+];
   
   let puntaje = 0;
   let i = 0;
@@ -69,41 +89,49 @@ let preguntas = [
     document.getElementById("puntaje").textContent = puntaje;
   }
   
-  //Boton no
-  function BotonNo() {
-    if (i < preguntas.length) {
+  //Función para mostrar mensajes en el div de corrección
+  function mostrarMensaje(mensaje, esCorrecto) {
+    const mensajeDiv = document.getElementById("mensaje");
+    mensajeDiv.textContent = esCorrecto ? "Bien respondido BRO - segui asi" : mensaje;
+    mensajeDiv.style.backgroundColor = esCorrecto ? "green" : "red";
+    
+}
+
+//Función para manejar la respuesta "No"
+function BotonNo() {
+  if (i < preguntas.length) {
+      const respuesta = respuestas[i].r;
       document.getElementById("objeto").textContent = preguntas[i].p;
       actualizarPuntaje("no");
       i++;
       if (i < imagenes.length) {
-        document.getElementById("imagen").src = imagenes[i].im;
+          document.getElementById("imagen").src = imagenes[i].im;
       }
-    } else {
+      mostrarMensaje(explicaciones[i].e, respuesta === "no");
+  } else {
       document.getElementById("objeto").textContent = "Nos quedamos sin preguntas";
       alert("Juego terminado");
-    }
-    console.log(imagenes[i]);
   }
-  
-  //Boton si
-  function BotonSi() {
-    if (i < preguntas.length) {
+}
+
+//Función para manejar la respuesta "Si"
+function BotonSi() {
+  if (i < preguntas.length) {
+      const respuesta = respuestas[i].r;
       document.getElementById("objeto").textContent = preguntas[i].p;
       actualizarPuntaje("si");
       i++;
       if (i < imagenes.length) {
-        document.getElementById("imagen").src = imagenes[i].im;
+          document.getElementById("imagen").src = imagenes[i].im;
       }
-    } else {
-      document.getElementById("objeto").textContent = "Nos quedamos sin preguntas";
-      alert("Juego terminado");
-    }
-    console.log(imagenes[i]);
+      mostrarMensaje(explicaciones[i].e, respuesta === "si");
+  } else {
+    document.getElementById("objeto").textContent = "Nos quedamos sin preguntas";
+    alert("Juego terminado");
   }
-  
-  
-  //Pone la primera pregunta
-  document.getElementById("objeto").textContent = preguntas[i].p;
-  document.getElementById("imagen").src = imagenes[i].im;
+}
 
+//Pone la primera pregunta
+document.getElementById("objeto").textContent = preguntas[i].p;
+document.getElementById("imagen").src = imagenes[i].im;
   
