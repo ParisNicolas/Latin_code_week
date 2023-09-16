@@ -1,13 +1,19 @@
 import React from "react";
 
 const stylo1 = {
-    border:' none' ,
-  }
+    border:' none',
+    width: "100vh",
+    height: "100vh",
+}
+
+const stylo2 = {
+    "text-align": "center",
+}
 
 function Cuestionario() {
     return (
-        <div>
-            <iframe src="/Cuestionario/index.html" width="100%" height="700px" style={stylo1}/>
+        <div style={stylo2}>
+            <iframe src="/Cuestionario/index.html" style={stylo1}/>
         </div>
         
     )

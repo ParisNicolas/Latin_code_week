@@ -9,7 +9,7 @@
     position: relative;
 }
 
-.content{
+.content-info{
   margin-left: 260px;
   display: flex;
   flex-direction: column;

@@ -17,7 +17,6 @@ let preguntas = [
   ];
   
   let respuestas = [
-    { r: ""},
     { r: "si" },//--1
     { r: "si" },//--2
     { r: "no" },//--3
@@ -38,22 +37,21 @@ let preguntas = [
   ];
   
   let imagenes = [
-    { im: ''}, 
-    { im: 'Foto1.jpg'},
-    { im: 'Foto2.jpg'},
-    { im: 'Foto3.jpg'},
-    { im: 'Foto4.jpg'},
-    { im: 'Foto5.jpg'},
-    { im: 'Foto6.jpg'},
-    { im: 'Foto7.jpg'},
-    { im: 'Foto8.jpg'},
-    { im: 'Foto9.jpg'},
-    { im: 'Foto10.jpg'},
-    { im: 'Foto11.jpg'},
-    { im: 'Foto12.jpg'},
-    { im: 'Foto13.jpg'},
-    { im: 'Foto14.jpg'},
-    { im: 'Foto15.jpg'},
+    { im: './Fotos/Foto1.jpg'},
+    { im: './Fotos/Foto2.jpg'},
+    { im: './Fotos/Foto3.jpg'},
+    { im: './Fotos/Foto4.jpg'},
+    { im: './Fotos/Foto5.jpg'},
+    { im: './Fotos/Foto6.jpg'},
+    { im: './Fotos/Foto7.jpg'},
+    { im: './Fotos/Foto8.jpg'},
+    { im: './Fotos/Foto9.jpg'},
+    { im: './Fotos/Foto10.jpg'},
+    { im: './Fotos/Foto11.jpg'},
+    { im: './Fotos/Foto12.jpg'},
+    { im: './Fotos/Foto13.jpg'},
+    { im: './Fotos/Foto14.jpg'},
+    { im: './Fotos/Foto15.jpg'},
    
   ];
   
@@ -61,6 +59,8 @@ let preguntas = [
   let puntaje = 0;
   let i = 0;
   
+  
+
   //Puntaje
   function actualizarPuntaje(respuesta) {
     if (respuesta === respuestas[i].r) {
@@ -95,13 +95,15 @@ let preguntas = [
         document.getElementById("imagen").src = imagenes[i].im;
       }
     } else {
-      document.getElementById("objeto").textContent = "Juego terminado";
+      document.getElementById("objeto").textContent = "Nos quedamos sin preguntas";
+      alert("Juego terminado");
     }
     console.log(imagenes[i]);
   }
   
-  // pone la primera pregunta
-  if (preguntas.length > 0) {
-    document.getElementById("objeto").textContent = preguntas[i].p;
-  }
+  
+  //Pone la primera pregunta
+  document.getElementById("objeto").textContent = preguntas[i].p;
+  document.getElementById("imagen").src = imagenes[i].im;
+
   

@@ -25,7 +25,7 @@
     margin-top: 50px; /* Espacio en la parte superior */
     padding: 50px; /* Espaciado interno */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-    
+    border-radius: 5px;
 }
 .titulo-carta-juego{
         font-size: 30px;

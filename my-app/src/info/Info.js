@@ -22,7 +22,7 @@ function Info() {
           <br></br>
         </ul>
       </div>
-      <div className="content">
+      <div className="content-info">
         <h1>Si tenes alguna duda sobre paneles solares puedes coonsultar nuestro catalogo</h1>
         <br/>
         <Chatbot />

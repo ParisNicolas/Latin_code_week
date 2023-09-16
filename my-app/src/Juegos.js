@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Cuestionario from "./Cuestionario";
 import Solaris from "./Solaris";
 
+
 function Juegos() {
     const [juego, setJuego] = useState("solaris");
 

@@ -14,7 +14,6 @@
         crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="script.css"> <!--el css fngbngluxifourpi-->
-    <script src="script.js"></script> <!--JAVASCRIPT-->
    
     <title>Cuestionario de Eficiencia Energetica</title>
 
@@ -28,25 +27,25 @@
         <p class="texto-cuestionario">A continuacion vas a tener una serie de preguntas de verdadero o falso para corroborar tus conocimientos sobre eficiencia energetica</p>
         <p class="texto-cuestionario">Toca cualquir boton para jugar</p>
     </div>
-    <div class="custom-card">
+    <div class="custom-card d-flex flex-column justify-content-center">
         <h1 class="titulo-carta-juego">Eficiencia energetica</h1>
         <br></br>
-        <div class="btn-group p-3 mb-2 bg-body-secondary" role="group" aria-label="Basic mixed styles example">
+        <div class="btn-group p-2 mb-2 bg-body-secondary" role="group" aria-label="Basic mixed styles example">
             <button type="button" class="btn btn-danger fst-italic" id="no" onclick="BotonNo()">No</button>
-            <div id="objeto" class="p-3"></div>
+            <div id="objeto" class="text-center fw-bold p-1"></div>
             <button type="button" class="btn btn-success fst-italic" id="si" onclick="BotonSi()">Si</button>
         </div>
     
     <div>  
-        <img id="imagen" src="">
+        <img class="rounded" id="imagen" src="">
     </div>
-    <div>
+    <div class="mt-2 align-self-start">
         <h2>Puntaje:</h2>
         <h2><span id="puntaje">0</span></h2>
         
     </div>
 </div>
-    
+    <script src="script.js"></script> <!--JAVASCRIPT-->
 </body>
 
 </html>
