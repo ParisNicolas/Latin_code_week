@@ -1,44 +1,15 @@
-.fondo-cues{
-    background-image: url('https://img.freepik.com/foto-gratis/fondo-acuarela-verde_95678-443.jpg'); /* Reemplaza con la ruta de tu imagen de fondo */
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.titulo-cuesrionario-juego {
-    font: bold 80px;
-    text-transform: uppercase;
-    color: #ff00ee;
-    text-shadow: 0  2px  0   #ff00f2,
-                 0  4px  0   #df0ef3,
-                 0  6px  0   #801470, 
-                 0  8px  0   #4f0f51, 
-                3px 8px 15px rgba(0,0,0,0.1),
-                3px 8px  5px rgba(0,0,0,0.3);
-    text-align: center;
-}
-
-.texto-cuestionario{
-    font-family: 'source-code-pro', monospace;
-    font: bold 40px;
-    text-align: center;
-}
-
 .custom-card {
     background-image: url("https://i.pinimg.com/736x/7d/1b/9d/7d1b9d8b4f112e4afdc5900c1a000955.jpg");
     width: 650px; /* Define el ancho deseado para la tarjeta */
     height: 700px;
     align-items: center;
     margin: 0 auto; /* Centra la tarjeta horizontalmente */
-    margin-top: 50px; /* Espacio en la parte superior */
     padding: 20px; /* Espaciado interno */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
     border-radius: 5px;
 }
 .titulo-carta-juego{
+        margin-top: -180px;
         font-size: 30px;
         font-weight: bold;
         text-transform: uppercase;
@@ -53,4 +24,5 @@
 #imagen{
         width:200px;
         height: 150px;
+        
 }

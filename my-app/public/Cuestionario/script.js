@@ -56,8 +56,6 @@ let preguntas = [
   ];
   
   let explicaciones = [
-    {e: ""},
-    {e: ""},
     {e: " INCORRECTO -- Apagar los dispositivos electrónicos cuando no se utilizan ayuda a ahorrar energía."},
     {e: " INCORRECTO -- Cambiar las bombillas incandescentes por bombillas LED reduce el consumo de energía."},
     {e: " INCORRECTO -- Dejar los electrodomésticos en modo de espera consume algo de energía."},
@@ -92,8 +90,8 @@ let preguntas = [
   //Función para mostrar mensajes en el div de corrección
   function mostrarMensaje(mensaje, esCorrecto) {
     const mensajeDiv = document.getElementById("mensaje");
-    mensajeDiv.textContent = esCorrecto ? "Bien respondido BRO - segui asi" : mensaje;
-    mensajeDiv.style.backgroundColor = esCorrecto ? "green" : "red";
+    mensajeDiv.textContent = esCorrecto ? "RESPUESTA CORRECTA --- VAS BIEN" : mensaje;
+    mensajeDiv.style.backgroundColor = esCorrecto ? "rgb(7, 100, 15)" : "rgb(202, 2, 2)";
     
 }
 
