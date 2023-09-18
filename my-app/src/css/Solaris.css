@@ -105,5 +105,9 @@
 }
 
 .barra{
+  padding-top: 10px;
+  background-image: url('https://img.freepik.com/foto-gratis/fondo-acuarela-verde_95678-443.jpg'); /* Reemplaza con la ruta de tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
   text-align: center;
 }

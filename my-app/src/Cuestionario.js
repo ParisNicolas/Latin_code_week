@@ -18,8 +18,8 @@ function Cuestionario() {
     <div>
         <h1 class="titulo-cuesrionario-juego">Cuestionario de Eficiencia Energetica</h1>
         <br></br>
-        <h5 class="texto-cuestionario">A continuacion vas a tener una serie de preguntas de verdadero o falso para corroborar tus conocimientos sobre eficiencia energetica</h5>
-        <p class="texto-cuestionario">Toca cualquir boton para jugar</p>
+        <h5 class="texto-cuestionario">A continuacion vas a tener una serie de preguntas de afirmacion o negacion para corroborar tus conocimientos sobre eficiencia energetica</h5>
+       
     </div>
         <div style={stylo2}>
             <iframe src="/Cuestionario/index.html" style={stylo1}/>

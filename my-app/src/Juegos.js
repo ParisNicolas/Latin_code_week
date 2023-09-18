@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import Cuestionario from "./Cuestionario";
 import Solaris from "./Solaris";
+import './css/Juegos.css';
 
 
 function Juegos() {
@@ -13,8 +14,8 @@ function Juegos() {
 
     return (
         <>
-        <div className="miBarra">
-            <select onChange={handleGame} className= "barra">
+        <div className="barra">
+            <select onChange={handleGame} className="barra-select">
                 <option value="solaris">Solaris</option>
                 <option value="cuestionario">Cuestionario</option>
             </select>

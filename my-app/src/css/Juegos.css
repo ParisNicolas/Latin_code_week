@@ -1,4 +1,22 @@
-.barra{
-    text-align: center;
-    margin-right: 200px;
+.select{
+
+    align-items: center;
+    
 }
+
+.barra-select {
+    background-image: url('https://img.freepik.com/fotos-premium/fondo-verde-abstracto-efecto-luz-degradado-amarillo-blanco_127755-2189.jpg'); /* Reemplaza con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    padding: 5px; /* Espaciado interior para el texto */
+    font-size: 16px; /* Tamaño de fuente */
+    text-align: center;
+    background-color: #93db8a; /* Color de fondo blanco */
+    color: rgb(22, 8, 8); /* Color del texto negro */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: border-color 0.3s; /* Transición suave del color del borde */
+  }
+  
+  .barra-select:hover {
+    border-color: rgb(255, 255, 255); /* Cambiar el color del borde al pasar el mouse */
+  }
