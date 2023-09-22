@@ -39,14 +39,17 @@ const Calculadora = () => {
                     <button onClick={toggleInfo}>
                         <h3>Datos Interesantes</h3>
                     </button>
-                    {mostrarInfo && (
-                        <div className="info-text">
-                            <p>¿Cómo sacar el consumo mensual en kWh?</p>
-                            <p className="size-text">Si queremos conocer su consumo mensual, sólo tenemos que multiplicar su consumo diario por el número de días del mes, por ejemplo, 30. Tendríamos un consumo mensual de 12 kWh.</p>
-                            <p>¿Cuál es el consumo normal de kWh en una casa?</p>
-                            <p className="size-text">El consumo de energía eléctrica promedio en el hogar en kWh va de 150 a 300 mensuales. Suele aumentar en verano.</p>
-                        </div>
-                    )}
+                    <div>
+                        <br></br>
+                        {mostrarInfo && (
+                            <div className="info-extra">
+                                <p>¿Cómo sacar el consumo mensual en kWh?</p>
+                                <p className="size-text">Si queremos conocer su consumo mensual, sólo tenemos que multiplicar su consumo diario por el número de días del mes, por ejemplo, 30. Tendríamos un consumo mensual de 12 kWh.</p>
+                                <p>¿Cuál es el consumo normal de kWh en una casa?</p>
+                                <p className="size-text">El consumo de energía eléctrica promedio en el hogar en kWh va de 150 a 300 mensuales. Suele aumentar en verano.</p>
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>

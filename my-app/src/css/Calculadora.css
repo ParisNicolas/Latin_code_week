@@ -47,7 +47,7 @@
     padding: 0;
 }
 .calculator button {
-    background-color: #5EB160;
+    background-color: #468547;
     padding: 0;
     color: white;
     padding: 5px 10px;
@@ -71,9 +71,24 @@
     flex-direction: column;
     align-items: center; /* Centrar horizontalmente en el centro del contenedor */
     text-align: center;
+    margin: 0 auto; /* Centrar horizontalmente el cuadro de resultado */
 }
 
 .calculator p {
     margin-top: 10px;
     font-weight: bold;
+}
+
+.info-extra{
+    background-color: #aeab7e; /* Fondo amarillo */
+    border: 2px solid #5EB160; /* Borde verde de 2px */
+    border-radius: 20px; /* Esquinas circulares */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 10px; /* Margen superior para separar del botón */
+    max-width: 1000px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente en el centro del contenedor */
+    text-align: center;
+    margin: 0 auto; /* Centrar horizontalmente el cuadro de resultado */
 }

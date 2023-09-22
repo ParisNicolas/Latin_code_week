@@ -2,6 +2,7 @@ import react from "react";
 import { useState } from 'react';
 import { useEffect } from 'react';
 import "./css/Solaris.css"
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
 
 function Solaris() {
@@ -22,7 +23,7 @@ function Solaris() {
     <>
       <div className="main-container">
         <div className="containerGame">
-          <h1 className="titulo-juego">Solaris Stike</h1>
+          <h1 className="titulo-juego" data-tooltip-id="tool2" >Solaris Stike</h1>
           <div>
             <h4>Bienvenido, mi Eco-Amigo, a una aventura única donde te convertirás en un maestro de la energía solar.</h4>
             <p>En 'Solaris Strike', te sumergirás en el emocionante mundo de los paneles solares y la iluminación ecológica. Tu misión es ayudar a que los focos brillen como nunca antes al dirigir rayos de luz solar hacia ellos.</p>
@@ -57,6 +58,11 @@ function Solaris() {
           <button id="resetButton" onClick={reset}>Reset</button>
         </div>
       </div>
+      <ReactTooltip
+        id="tool2"
+        content="Diviertete aprendiendo"
+        place="bottom"
+        />
     </>
   );
 }
