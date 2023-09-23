@@ -92,3 +92,21 @@
     text-align: center;
     margin: 0 auto; /* Centrar horizontalmente el cuadro de resultado */
 }
+
+.text-aux-small {
+    font-size: 14px; /* Tamaño de fuente más pequeño */
+    padding: 10px; /* Menos espacio de relleno */
+    border: 2px solid #5EB160;
+    border-radius: 10px;
+    background-color: #aeab7e;
+    display: inline-block; /* Para que el cuadro sea del tamaño del texto */
+}
+
+.chart-container-global {
+    background-color: white; /* Fondo blanco para el cuadro del gráfico */
+    padding: 10px; /* Espacio de relleno para separar el gráfico del contenido circundante */
+    border: 2px solid #5EB160;
+    border-radius: 10px;
+    max-width: 400px; /* Ajusta el ancho máximo según tus preferencias */
+    margin: 20px auto 0; /* Centrar el div horizontalmente en el contenedor principal y agregar margen superior */
+}
