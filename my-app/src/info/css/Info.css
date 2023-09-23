@@ -10,7 +10,8 @@
 }
 
 .content-info{
-  margin-left: 260px;
+  margin-left: 290px;
+  padding-left: 10px;
   display: flex;
   flex-direction: column;
 }

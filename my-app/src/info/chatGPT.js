@@ -8,7 +8,7 @@ const Chatbot = () => {
 
 	const handleSubmit = async (question) => {
 		try {
-			const apiKey = process.env.API_KEY;
+			const apiKey = process.env.API_KEY ? process.env.API_KEY:console.log("Error en apikey");
 			const response = await axios.post(
 				"https://api.openai.com/v1/completions",
 				{
@@ -32,7 +32,7 @@ const Chatbot = () => {
 
 	return (
 		<div>
-			<h1>
+			<h1 className="title-cbot">
 				<em>Chatbot de Eficiencia Energética</em>
 			</h1>
 			<Form handleSubmit={handleSubmit} />

@@ -66,11 +66,11 @@ function draw() {
     
 //_____Pantalla de inicio______
   }else{
-    if(firstTime){
+    /*if(firstTime){
       //Empezar con tactil
       document.addEventListener("touchstart", () => {menu=false; firstTime=true}, {once : true});
       firstTime=false;
-    }
+    }*/
       background(bg);
       fill(255);
       textSize(30);
@@ -80,6 +80,7 @@ function draw() {
       text("Use 'space' to shoot", width-160, height/2-40);
       if(kb.pressing('space')){
         menu = false;
+        firstTime=true;
       }
   }
 }
@@ -166,10 +167,10 @@ function game_render() {
   }
   
   //---------------MOVIMIENTO DE LA NAVE--------------
-  if(moving && navy.x > 25 && navy.x < width-27){
+  /*if(moving && navy.x > 25 && navy.x < width-27){
     if(!direction) navy.vel.x = -8;
     else navy.vel.x = 8;
-  }
+  }*/
   //else navy.vel.x = 0;
 
   if (kb.pressing('left') && navy.x > 25){
