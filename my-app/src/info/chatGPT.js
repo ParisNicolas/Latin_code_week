@@ -5,9 +5,11 @@ import "./css/chatbot.css";
 
 const Chatbot = () => {
 	const [response, setResponse] = useState("");
+	
 
 	const handleSubmit = async (question) => {
 		try {
+			console.log(process.env);
 			const apiKey = process.env.NEXT_PUBLIC_API_KEY;
 			const response = await axios.post(
 				"https://api.openai.com/v1/completions",
