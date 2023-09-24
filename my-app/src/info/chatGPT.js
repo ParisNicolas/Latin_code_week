@@ -8,7 +8,7 @@ const Chatbot = () => {
 
 	const handleSubmit = async (question) => {
 		try {
-			const apiKey = process.env.API_KEY ? process.env.API_KEY:console.log("Error en apikey");
+			const apiKey = process.env.REACT_APP_API_KEY;
 			const response = await axios.post(
 				"https://api.openai.com/v1/completions",
 				{
